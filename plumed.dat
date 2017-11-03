@@ -1,0 +1,16 @@
+# Ramachandran dihedral angle phi
+phi1: TORSION ATOMS=5,7,9,15
+# Ramachandran dihedral angle psi
+psi1: TORSION ATOMS=7,9,15,17
+
+# Well-tempered metadynamics in phi, psi
+metad: ARG=phi1,psi1 ...
+PACE=500 HEIGHT=1.2 
+BIASFACTOR=15 TEMP=300.0
+SIGMA=0.3,0.3
+FILE=HILLS
+...
+
+# Print both CVs and the bias potential into COLVAR file
+PRINT ARG=phi1,psi1,metad.bias FILE=COLVAR STRIDE=100
+
