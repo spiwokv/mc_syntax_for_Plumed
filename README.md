@@ -1,6 +1,8 @@
 # mc_syntax_for_Plumed
 Syntax highlight of plumed.dat files in Midnight Commander
 
+![alt text][./screenshot.png]
+
 # Instalation
 Copy (as a root) `syntax/dat.syntax` to `/usr/share/mc/syntax/` and add lines:
 ```
