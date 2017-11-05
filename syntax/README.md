@@ -18,9 +18,9 @@ include /home/your_login/.local/share/mc/dat.syntax
 or
 ```
 file ..\*\\.(dat)$ Plumed\sCommands
-include /home/your_login/.config/mc/mcedit/Syntax/dat.syntax
+include /home/your_login/.config/mc/mcedit/dat.syntax
 ```
-to `~/.local/share/mc/` or `~/.config/mc/mcedit/Syntax` above lines
+to `~/.local/share/mc/Syntax` or `~/.config/mc/mcedit/Syntax` above lines
 ```
 file .\* unknown
 include unknown.syntax
