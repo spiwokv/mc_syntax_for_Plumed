@@ -13,9 +13,14 @@ include unknown.syntax
 Alternatively (if you don't have root access) copy `syntax/dat.syntax` to `~/.local/share/mc/` or `~/.config/mc/mcedit` and add lines:
 ```
 file ..\*\\.(dat)$ Plumed\sCommands
-include dat.syntax
+include /home/your_login/.local/share/mc/dat.syntax
 ```
-to `~/.config/mc/mcedit/Syntax` or `/.config/mc/mcedit/Syntax` above lines
+or
+```
+file ..\*\\.(dat)$ Plumed\sCommands
+include /home/your_login/.config/mc/mcedit/Syntax/dat.syntax
+```
+to `~/.local/share/mc/` or `~/.config/mc/mcedit/Syntax` above lines
 ```
 file .\* unknown
 include unknown.syntax
